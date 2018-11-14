@@ -8,7 +8,8 @@ import pokes from "./pokes.json";
 
 class App extends Component {
   state = {
-    message: "Click any Rick & Morty Character to start. \n But don't click it twice or you'll lose!",
+    message1: "Click on any Rick & Morty Character to start!",
+    message2: "But don't click on it twice or you'll lose!",
     highScore: 0,
     runningScore: 0,
     pokes: pokes,
@@ -32,7 +33,7 @@ class App extends Component {
 
     if (findPoke === undefined) {
       this.setState({
-        message: "You already guessed that Rick & Morty Character!",
+        message1: "You already guessed that Rick & Morty Character!",
         highScore: (this.state.runningScore > this.state.highScore) ? this.state.runningScore : this.state.highScore,
         runningScore: 0,
         pokes: pokes,
@@ -44,7 +45,7 @@ class App extends Component {
       const newPokes = this.state.unselectedPokes.filter(item => item.name !== name);
 
       this.setState({
-        message: "Keep guessing!",
+        message1: "Keep guessing!",
         runningScore: this.state.runningScore + 1,
         pokes: pokes,
         unselectedPokes: newPokes
@@ -57,10 +58,11 @@ class App extends Component {
     return (
       <div>
         <Title backgroundImage="./images/header.jpg">
-          <h1>Click-Game!</h1>
+          <h1>Clicky-Game!</h1>
         </Title>
         <Score
-          message={this.state.message}
+          message1={this.state.message1}
+          message2={this.state.message}
           runningScore={this.state.runningScore}
           highScore={this.state.highScore}
         />
