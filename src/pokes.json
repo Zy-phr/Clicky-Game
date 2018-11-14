@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Birdperson",
+    "image":
+      "./images/playableBirdperson.png"
+  },
+  {
+    "id": 2,
+    "name": "Dr.Xenon Bloom",
+    "image":
+      "./images/playableDrXenonBloom.png"
+  },
+  {
+    "id": 3,
+    "name": "Hemorrhage",
+    "image":
+      "./images/playableHemorrhage.png"
+  },
+  {
+    "id": 4,
+    "name": "Krombopulous Michael",
+    "image":
+      "./images/playableKrombopulosMichael.png"
+  },
+  {
+    "id": 5,
+    "name": "Morty",
+    "image":
+      "./images/playableMorty.png"
+  },
+  {
+    "id": 6,
+    "name": "Noob Noob",
+    "image":
+      "./images/playableNoob-Noob.png"
+  },
+  {
+    "id": 7,
+    "name": "Pickle Rick",
+    "image":
+      "./images/playablePickleRick.png"
+  },
+  {
+    "id": 8,
+    "name": "Prince Nebulon",
+    "image":
+      "./images/playablePrinceNebulon.png"
+  },
+  {
+    "id": 9,
+    "name": "Rick",
+    "image":
+      "./images/playableRick.png"
+  },
+  {
+    "id": 10,
+    "name": "Scary Terry",
+    "image":
+      "./images/playableScaryTerry.png"
+  },
+{
+    "id": 11,
+    "name": "Squanchy",
+    "image":
+      "./images/playableSquanchy.png"
+  },
+  {
+    "id": 12,
+    "name": "Summer",
+    "image":
+      "./images/playableSummer.png"
+  }
+]
