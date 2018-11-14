@@ -8,7 +8,7 @@ import pokes from "./pokes.json";
 
 class App extends Component {
   state = {
-    message: "Click any Rick & Morty Characterto start. But don't click it twice or you lose!",
+    message: "Click any Rick & Morty Character to start. \n But don't click it twice or you'll lose!",
     highScore: 0,
     runningScore: 0,
     pokes: pokes,
@@ -57,7 +57,7 @@ class App extends Component {
     return (
       <div>
         <Title backgroundImage="./images/header.jpg">
-          <h1>Click-a-Rick&Morty Character!</h1>
+          <h1>Click-Game!</h1>
         </Title>
         <Score
           message={this.state.message}
