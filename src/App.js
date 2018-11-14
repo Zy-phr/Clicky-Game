@@ -33,7 +33,7 @@ class App extends Component {
 
     if (findPoke === undefined) {
       this.setState({
-        message: "You already guessed that Rick & Morty Character!",
+        message: "You already guessed that Rick & Morty Character!  GAME OVER!!!",
         highScore: (this.state.runningScore > this.state.highScore) ? this.state.runningScore : this.state.highScore,
         runningScore: 0,
         pokes: pokes,
