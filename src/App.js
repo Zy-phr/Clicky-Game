@@ -8,7 +8,7 @@ import pokes from "./pokes.json";
 
 class App extends Component {
   state = {
-    message: "Click any Pokémon to start. But don't click it twice or you lose!",
+    message: "Click any Rick & Morty Characterto start. But don't click it twice or you lose!",
     highScore: 0,
     runningScore: 0,
     pokes: pokes,
@@ -19,7 +19,7 @@ class App extends Component {
   componentDidMount() {
   }
 
-  //function to shuffle pokemon
+  //function to shuffle characters
   shuffleArray = array => {
     for (let i = array.length - 1; i > 0; i--) {
       let j = Math.floor(Math.random() * (i + 1));
@@ -31,9 +31,8 @@ class App extends Component {
     const findPoke = this.state.unselectedPokes.find(item => item.name === name);
 
     if (findPoke === undefined) {
-      // user selects a pokemon that's already been selected
       this.setState({
-        message: "You already guessed that Pokémon!",
+        message: "You already guessed that Rick & Morty Character!",
         highScore: (this.state.runningScore > this.state.highScore) ? this.state.runningScore : this.state.highScore,
         runningScore: 0,
         pokes: pokes,
@@ -41,7 +40,7 @@ class App extends Component {
       });
     }
     else {
-      // success to select a new pokemon
+      // success to select a new character
       const newPokes = this.state.unselectedPokes.filter(item => item.name !== name);
 
       this.setState({
